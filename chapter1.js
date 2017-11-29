@@ -1,5 +1,4 @@
 function nestedLoops(numbers){
-
   for(var i = 0; i < numbers.length; i++){
     for(var a = 0; a <numbers[i].length; a++){
       if(numbers[i][a] % 2 == 0){
@@ -24,9 +23,10 @@ var numbers = [
     [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
 ];
-
 nestedLoops(numbers)
+
 //###################### Fundementals Challenges Set, 1 #######################
+/* Print all the intergers from -52 to 1066. Do this using a FOR loop.*/
 function int(i){
   for (var i = -52; i < 1067; i++){
     console.log(i);
@@ -34,7 +34,9 @@ function int(i){
   int(i);
 }
 int()
-// ####################################
+
+/* Set variable myNumber equal to the value 42. Then set variable myName equal to your name.
+Now swap values - put the value of myNumber into myName and vice versa */
 function swap(){
   var myNumber = 21;
   var myName = "Tamisha";
@@ -46,7 +48,8 @@ function swap(){
   }
 }
 swap()
-// ################################
+
+/* Print multiples of 6, from 6 to 60,000. Do this using a WHILE loop.*/
 function multi(){
   var i = 6;
   while (i < 60,0001){
@@ -55,14 +58,17 @@ function multi(){
   }
 }
 multi()
-// ##############################
+
+/* Print all the integers from 2000 to 5280, inclusive. Do this using WHILE Loop. */
 function int(){
   var i = 2000;
   while (i =< 5280){
     console.log(i);
   }
 }
-// ###################################
+int()
+
+/* “Create beCheerful(). Within it, console.log string "good morning!" Call it 98 times.” */
 function beCheerful(){
   for (var i = 1; i <= 98; i++){
     console.log("good morning!");
@@ -71,7 +77,7 @@ function beCheerful(){
 beCheerful()
 
 //########################## Fundementals Challenges Set II #########################
-//#########################                                 ########################
+/* Using FOR, print multiples of 3 from -300 to 0. Skip -3 and -6. */
 function multi(){
   for (var i = -300; i <= 0; i+3){
     if (i == -3 || i == -6){
@@ -81,7 +87,8 @@ function multi(){
   }
 }
 multi()
-// ################################
+
+/* Log positive numbers starting at 2016, counting down by fours (exclude 0), without a FOR loop. */
 function multiFour(){
   var num = 2016;
   while (num <= 2016){
