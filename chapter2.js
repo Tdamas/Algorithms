@@ -50,3 +50,15 @@ function DrawRightStars(num){
   }
 }
 DrawRightStars(15);
+
+function DrawCenterStars(num){
+  for(var i = 0; i < 75; i++){
+    if(i < Math.floor((75-num)/2) || i > Math.ceil((75 - num)/2) + num{
+      console.log(" ");
+    }
+    else{
+      console.log("*");
+    }
+  }
+}
+DrawCenterStars(20);
