@@ -100,7 +100,8 @@ function multiFour(){
   }
 }
 multiFour()
-// #######################################
+
+//////////////////////////
 function multi_count(){
   var count = 0;
   for (var i = 512; i < 4096; i++){
