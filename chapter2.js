@@ -78,3 +78,29 @@ function threesFives(){
   console.log(sum);
 }
 threesFives();
+
+/* “Change is inevitable (especially when breaking a twenty). Make generateCoinChange(cents). Accept a number of
+American cents, compute and print how to represent that amount with smallest number of coins. Common American coins
+ are pennies (1 cent), nickels (5 cents), dimes (10 cents), and quarters (25 cents).” */
+function generateCoinChange(cents){
+  var arr = [25,10,5,1];
+  change = [];
+  for (var i = 0; i < arr.length; i++){
+    change[i] = Math.floor(cents / arr[i]);
+    cents = cents % arr[i];
+  }
+  return change;
+}
+generateCoinChange(94);
+
+/* Write a function that console.logs the number 1, then "chick", then "boom", then "chick", then 2, then "chick", then
+"boom", then "chick" - continuuing the same cycle for each number up to (including) 12. */
+function twelveBarBlues() {
+  var count = 0;
+  for(var i = 1; i <= 12; i++){
+    console.log(count = i);
+    console.log("chick");
+    console.log("boom");
+  }
+}
+twelveBarBlues();
