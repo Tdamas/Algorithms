@@ -101,7 +101,7 @@ function multiFour(){
 }
 multiFour()
 
-//////////////////////////
+/* Print all integer multiples of 5, from 512 to 4096. Afterwards, also log how many there were. */
 function multi_count(){
   var count = 0;
   for (var i = 512; i < 4096; i++){
@@ -113,9 +113,8 @@ function multi_count(){
   console.log(count)
 }
 multi_count()
-// #######################################
-/* Counting the dojo way!
-Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print "Dojo".*/
+
+/*Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print "Dojo".*/
 function dojoCount(){
   for (var i = 1; i <= 100; i++){
     if (i % 5 == 0){
@@ -127,9 +126,8 @@ function dojoCount(){
   }
 }
 dojoCount()
-// ########################################################
-/*What do you know?
- Your function will be given an input parameter incoming. Please console.log this value.*/
+
+/* Your function will be given an input parameter incoming. Please console.log this value.*/
 function incoming(num){
   console.log(num);
 }
@@ -172,6 +170,13 @@ sumOfOdd()
 to param3 inclusive unless multiple is equal to param4. Use a While loop. Given (3,5,17,9),
 print 6, 12, 15 (which are all multiples of 3 between 5 and 17, except for 9). */
 function multiples(param1, param2, param3, param4){
-  While(param2 <= param3 &&)
+  while(param2 < param3){
+    if(param2 != param4){
+      if(param2 % param1 == 0){
+        console.log(param2);
+      }
+    }
+    param2++;
+  }
 }
 multiples(3,5,17,9);

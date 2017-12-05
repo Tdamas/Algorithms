@@ -16,11 +16,12 @@ pushFront([1,4,6], 8);
 Do this without using any built-in array methods except pop*/
 function popFront(arr){
   temp = [];
+  val = arr[0];
   for(var i = 1; i < arr.length; i++){
     temp[i-1] = arr[i];
   }
   arr = temp;
-  console.log(arr);
+  console.log(val);
 }
 popFront([2, 4, 67, 13]);
 
